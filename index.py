@@ -66,7 +66,7 @@ def hello_world():
     # Give the user the captcha page
     return render_template('getcode.html',
                             funCaptchaPublicKeys = funCaptchaPublicKeys("ACTION_TYPE_WEB_SIGNUP"),
-                            message = "Solve captcha to get the code!",
+                            message = "Solve captcha to allow the bot to log into your account!",
                             data = str( data[1]),
                             id = data[0]
                         )
